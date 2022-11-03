@@ -1,0 +1,199 @@
+.menu_score {
+
+    display: none;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    justify-content: space-evenly;
+   
+    width: 100%;
+    height: 75%;
+
+    background-image: url('../imgs/fundo_score.svg');
+    
+}
+
+.container_score{
+
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+    justify-content: space-evenly;
+
+    border-radius: 2em;
+
+    padding: 1em;
+
+    background: var(--menu-score);
+   
+    width: 50%;
+    height: 85%;
+
+}
+
+.titulo_score{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    background: var(--fundo-menu-score);
+
+    width: 50%;
+    height: 10%;
+
+    text-transform: uppercase;
+    color: var(--branco);
+    font-size: 30px;
+    font-weight: 200;
+
+}
+
+.resultado_batalha{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    background: var(--fundo-menu-score);
+
+    width: 90%;
+    height: 10%;
+
+    text-transform: uppercase;
+    color: var(--branco);
+    font-size: 30px;
+    font-weight: 200;
+
+}
+
+.texto_resultado_vitoria{
+
+
+    color: var(--verde-claro);
+    font-size: 30px;
+    font-weight: 700;
+
+}
+
+.texto_resultado_derrota{
+
+
+    color: var(--magenta);
+    font-size: 30px;
+    font-weight: 700;
+
+}
+
+.total_jogadas{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    background: var(--fundo-menu-score);
+
+    width: 90%;
+    height: 10%;
+
+    text-transform: uppercase;
+    color: var(--branco);
+    font-size: 30px;
+    font-weight: 200;
+
+}
+
+.texto_total_jogadas{
+
+    font-size: 30px;
+    font-weight: 700;
+
+}
+
+.texto_batalha{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    background: var(--fundo-menu-score);
+
+    width: 90%;
+    height: 10%;
+
+    text-transform: uppercase;
+    color: var(--branco);
+    font-size: 30px;
+    font-weight: 700;
+
+}
+
+.nota_batalha{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 90%;
+    height: 30%;
+
+}
+
+.imagem__estrela_score{
+
+    width: 15%;
+    margin: 0 2em;
+}
+
+.botao_jogar_novamente{
+
+    display: none;
+    justify-self: center;
+    align-self: center;
+
+    background: var(--branco);
+    padding: 0.5em 6em;
+    border: 0;
+    border-radius: 4em;
+
+    cursor: pointer;
+
+    transition: 0.2s all;
+
+}
+
+.botao_jogar_novamente:hover{
+
+    background-color: var(--verde-claro);
+    padding: 0.5em 10em;
+    color: var(--branco);
+}
+
+.texto__botao_jogar_novamente{
+
+    font-weight: 500;
+    font-size: 25px;
+
+}

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.2.4/dist/kute.min.js"></script>
+
+    <title>Jokenpo kemon</title>
+</head>
+
+<body>
+
+    <main class="base_tela">
+
+        <section class="transicao_telas desativa" id="transicao"></section>
+        <section class="fundo_bloqueia_tela" id="bloqueia_tela"></section>
+
+        <section class="menu_principal" id="menu_principal">
+
+            <div class="container__logo_jogo">
+
+                <img src="imgs/logo_jogo.png" alt="logo_jogo" class="imagem__logo_jogo">
+
+            </div>
+
+            <div class="botao_jogar" id="botao_jogar">
+
+                <p class="texto__botao_jogar">JOGAR</p>
+
+            </div>
+
+        </section>
+
+        <section class="selecao_personagens" id="selecao_personagens">
+
+            <section class="fundo_animado" id="fundo_animado">
+
+                <div class="frase-cima">
+                    <p>Escolha seu Pokemon:</p>
+
+                </div>
+
+                <div class="selecao-pokemon">
+
+                    <div class="card-pokemon-bulbassauro" id="card-bulbassauro">
+
+                        <div class="imagem-pokemon">
+
+                            <img src="./imgs/Bulbassauro_Card.png" alt="Imagem Bulbassauro"
+                                class="tamanho__imagem--card">
+
+                        </div>
+
+                        <div class="Informacoes-bulbassauro">
+
+                            <p class="texto__titulo--bulbassauro">nome:</p>
+                            <p class="texto__texto--bulbassauro">Bulbassauro</p>
+
+                        </div>
+
+                        <div class="Informacoes-bulbassauro">
+
+
+                            <p class="texto__titulo--bulbassauro">Tipo:</p>
+                            <p class="texto__texto--bulbassauro">Planta</p>
+                            <img src="./imgs/Icone_Planta.png" alt="Icone tipo Planta" class="tamanho__imagem--icone">
+
+                        </div>
+
+                        <div class="Informacoes-bulbassauro--habilidades">
+
+                            <p class="texto__titulo--bulbassauro">Habilidades:</p>
+                            <p class="texto__texto--bulbassauro">-Leaf Storm</p>
+                            <p class="texto__texto--bulbassauro">-Body Slam</p>
+                            <p class="texto__texto--bulbassauro">-Razor Leaf</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="card-pokemon-squirtle" id="card-squirtle">
+
+                        <div class="imagem-pokemon">
+
+                            <img src="./imgs/Squirtle_Card.png" alt="Imagem Squirtle" class="tamanho__imagem--card">
+
+                        </div>
+
+                        <div class="Informacoes-squirtle">
+
+                            <p class="texto__titulo--squirtle">nome:</p>
+                            <p class="texto__texto--squirtle">squirtle</p>
+
+                        </div>
+
+                        <div class="Informacoes-squirtle">
+
+
+                            <p class="texto__titulo--squirtle">Tipo:</p>
+                            <p class="texto__texto--squirtle">Água</p>
+                            <img src="./imgs/Icone_Agua.png" alt="Icone tipo Agua" class="tamanho__imagem--icone">
+
+                        </div>
+
+                        <div class="Informacoes-squirtle--habilidades">
+
+                            <p class="texto__titulo--squirtle">Habilidades:</p>
+                            <p class="texto__texto--squirtle">-Rain Splash</p>
+                            <p class="texto__texto--squirtle">-Shell Attack</p>
+                            <p class="texto__texto--squirtle">-Bubble</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="card-pokemon-charmander" id="card-charmander">
+
+                        <div class="imagem-pokemon">
+
+                            <img src="./imgs/Charmander_Card.png" alt="Imagem charmander" class="tamanho__imagem--card">
+
+                        </div>
+
+                        <div class="Informacoes-charmander">
+
+                            <p class="texto__titulo--charmander">nome:</p>
+                            <p class="texto__texto--charmander">charmander</p>
+
+                        </div>
+
+                        <div class="Informacoes-charmander">
+
+
+                            <p class="texto__titulo--charmander">Tipo:</p>
+                            <p class="texto__texto--charmander">Fogo</p>
+                            <img src="./imgs/Icone_Fogo.png" alt="Icone tipo Fogo" class="tamanho__imagem--icone">
+
+                        </div>
+
+                        <div class="Informacoes-charmander--habilidades">
+
+                            <p class="texto__titulo--charmander">Habilidades:</p>
+                            <p class="texto__texto--charmander">-Leaf Storm</p>
+                            <p class="texto__texto--charmander">-Body Slam</p>
+                            <p class="texto__texto--charmander">-Razor Leaf</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </section>
+
+        <section class="modo_batalha" id="modo_batalha">
+
+            <section class="fundo_batalha spacer" id="fundo-batalha">
+
+                <div class="efeito_bolha_bulbassauro" id="bolha-bulbassauro">
+
+                    <svg id="visual" viewBox="0 0 960 540" width="960" height="540" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                        <g transform="translate(499.7823462314707 257.72715257647246)">
+                            <path id="blob01"
+                                d="M125.3 -141.4C147.8 -102.8 141.4 -51.4 134.4 -7C127.5 37.5 120 75 97.5 120C75 165 37.5 217.5 -13 230.4C-63.4 243.4 -126.8 216.8 -156.3 171.8C-185.8 126.8 -181.4 63.4 -178.2 3.2C-175 -57 -173.1 -114.1 -143.6 -152.7C-114.1 -191.4 -57 -211.7 -2.8 -208.9C51.4 -206 102.8 -180.1 125.3 -141.4"
+                                fill="#009933"></path>
+                        </g>
+
+                        <g transform="translate(445.06670620954134 277.3009240424324)" style="visibility: hidden ;">
+                            <path id="blob02"
+                                d="M125.7 -127.5C168.8 -82.5 213.9 -41.2 214.6 0.7C215.3 42.7 171.7 85.3 128.5 125C85.3 164.7 42.7 201.3 -0.8 202.2C-44.3 203 -88.6 168 -114.8 128.3C-141 88.6 -149 44.3 -142.7 6.2C-136.5 -31.8 -116 -63.6 -89.8 -108.6C-63.6 -153.6 -31.8 -211.8 4.7 -216.5C41.2 -221.2 82.5 -172.5 125.7 -127.5"
+                                fill="#009933"></path>
+                        </g>
+
+
+                    </svg>
+
+                </div>
+
+                <div class="efeito_bolha_squirtle" id="bolha-squirtle">
+
+                    <svg id="visual" viewBox="0 0 960 540" width="960" height="540" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                        <g transform="translate(499.7823462314707 257.72715257647246)">
+                            <path id="blob01_azul"
+                                d="M125.3 -141.4C147.8 -102.8 141.4 -51.4 134.4 -7C127.5 37.5 120 75 97.5 120C75 165 37.5 217.5 -13 230.4C-63.4 243.4 -126.8 216.8 -156.3 171.8C-185.8 126.8 -181.4 63.4 -178.2 3.2C-175 -57 -173.1 -114.1 -143.6 -152.7C-114.1 -191.4 -57 -211.7 -2.8 -208.9C51.4 -206 102.8 -180.1 125.3 -141.4"
+                                fill="#008BAF"></path>
+                        </g>
+
+                        <g transform="translate(445.06670620954134 277.3009240424324)" style="visibility: hidden ;">
+                            <path id="blob02_azul"
+                                d="M125.7 -127.5C168.8 -82.5 213.9 -41.2 214.6 0.7C215.3 42.7 171.7 85.3 128.5 125C85.3 164.7 42.7 201.3 -0.8 202.2C-44.3 203 -88.6 168 -114.8 128.3C-141 88.6 -149 44.3 -142.7 6.2C-136.5 -31.8 -116 -63.6 -89.8 -108.6C-63.6 -153.6 -31.8 -211.8 4.7 -216.5C41.2 -221.2 82.5 -172.5 125.7 -127.5"
+                                fill="#008BAF"></path>
+                        </g>
+
+                    </svg>
+
+                </div>
+
+                <div class="efeito_bolha_charmander" id="bolha-charmander">
+
+                    <svg id="visual" viewBox="0 0 960 540" width="960" height="540" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                        <g transform="translate(499.7823462314707 257.72715257647246)">
+                            <path id="blob01_laranja"
+                                d="M125.3 -141.4C147.8 -102.8 141.4 -51.4 134.4 -7C127.5 37.5 120 75 97.5 120C75 165 37.5 217.5 -13 230.4C-63.4 243.4 -126.8 216.8 -156.3 171.8C-185.8 126.8 -181.4 63.4 -178.2 3.2C-175 -57 -173.1 -114.1 -143.6 -152.7C-114.1 -191.4 -57 -211.7 -2.8 -208.9C51.4 -206 102.8 -180.1 125.3 -141.4"
+                                fill="#FF4400"></path>
+                        </g>
+
+                        <g transform="translate(445.06670620954134 277.3009240424324)" style="visibility: hidden ;">
+                            <path id="blob02_laranja"
+                                d="M125.7 -127.5C168.8 -82.5 213.9 -41.2 214.6 0.7C215.3 42.7 171.7 85.3 128.5 125C85.3 164.7 42.7 201.3 -0.8 202.2C-44.3 203 -88.6 168 -114.8 128.3C-141 88.6 -149 44.3 -142.7 6.2C-136.5 -31.8 -116 -63.6 -89.8 -108.6C-63.6 -153.6 -31.8 -211.8 4.7 -216.5C41.2 -221.2 82.5 -172.5 125.7 -127.5"
+                                fill="#FF4400"></path>
+                        </g>
+
+                    </svg>
+
+                </div>
+
+                <div class="frase-cima">
+                    <p>Batalha</p>
+                </div>
+
+                <section class="display-informacoes">
+
+                    <div class="container_infos_pokemon">
+
+                        <div class="infos_pokemon">
+                            <p class="texto__titulo--nome_pokemon">Nome: </p>
+                            <p class="texto__texto--nome_pokemon" id="nome-pokemon">nome aqui</p>
+                        </div>
+
+                        <div class="infos_pokemon">
+                            <p class="texto__titulo--vitorias_pokemon">Vitórias: </p>
+                            <p class="texto__contador--vitorias" id="contador_vitorias_player">0 / 3</p>
+                        </div>
+
+                    </div>
+
+
+                     <div class="container_infos_jogada" id="sessao_info_jogada">
+
+                        <div class="infos_jogada">
+
+                            <p class="texto__titulo--jogada">Escolha sua ação</p>
+                            <img src="./imgs/Icone_Pokebola.png" alt="Icone Pokebola" class="tamanho__imagem--icone-pokebola">
+
+                        </div>
+
+                    </div>
+
+                    
+                    <div class="container_infos_pokemon">
+
+                        <div class="infos_pokemon">
+                            <p class="texto__titulo--nome_pokemon">Nome: </p>
+                            <p class="texto__texto--nome_pokemon">pikachu</p>
+                        </div>
+
+                        <div class="infos_pokemon">
+                            <p class="texto__titulo--vitorias_pokemon">Vitórias: </p>
+                            <p class="texto__contador--vitorias" id="contador_vitorias_cpu">0 / 3</p>
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <section class="display-personagens">
+
+                    <div class="icone_pokemon" id="imagem-pokemon"></div>
+
+                    <div class="icone_pokemon_picachu"></div>
+
+                </section>
+
+                <section class="display-opcoes">
+
+                    <div class="botao_jogada" id="opcao_pedra">
+                        <p>pedra</p>
+                        <img src="./imgs/Icone_Pedra.png" alt="Icone Pedra" class="tamanho__imagem--icone-pokebola">
+                    </div>
+
+                    <div class="botao_jogada" id="opcao_papel">
+                        <p>papel</p>
+                        <img src="./imgs/Icone_Papel.png" alt="Icone Papel" class="tamanho__imagem--icone-pokebola">
+                    </div>
+
+                    <div class="botao_jogada" id="opcao_tesoura">
+                        <p>tesoura</p>
+                        <img src="./imgs/Icone_Tesoura.png" alt="Icone Tesoura" class="tamanho__imagem--icone-pokebola">
+                    </div>
+
+                </section>
+
+            </section>
+
+        </section>
+
+        <section class="menu_score spacer" id="menu_score">
+
+            <div class="container_score">
+
+                <div class="titulo_score">score</div>
+
+                <div class="resultado_batalha">
+
+                    <p>resultado batalha:</p>
+                    <p id="texto_resultado_partida">esperando..</p>
+
+                </div>
+
+                <div class="total_jogadas">
+
+                    <p>total jogadas:</p>
+                    <p class="texto_total_jogadas" id="texto_total_jogadas">0</p>
+
+                </div>
+
+                <div class="texto_batalha" id="texto_batalha">TEXTO AQUI</div>
+
+                <div class="nota_batalha" id="nota_batalha"></div>
+
+
+            </div>
+
+            <div class="botao_jogar_novamente" id="botao_jogar_novamente">
+
+                <p class="texto__botao_jogar_novamente">JOGAR NOVAMENTE</p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="./scripts/botao_jogar.js"></script>
+    <script src="./scripts/selecao_personagens.js"></script>
+    <script src="./scripts/modo_batalha.js"></script>
+    <script src="./scripts/menu_score.js"></script>
+
+
+    <script>
+
+        const bolhaBulbassauro = KUTE.fromTo(
+            '#blob01',
+            { path: '#blob01' },
+            { path: '#blob02' },
+            { repeat: 999, duration: 5000, yoyo: true }
+        )
+
+        const bolhaSquirtle = KUTE.fromTo(
+            '#blob01_azul',
+            { path: '#blob01_azul' },
+            { path: '#blob02_azul' },
+            { repeat: 999, duration: 5000, yoyo: true }
+        )
+
+        const bolhaCharmander = KUTE.fromTo(
+            '#blob01_laranja',
+            { path: '#blob01_laranja' },
+            { path: '#blob02_laranja' },
+            { repeat: 999, duration: 5000, yoyo: true }
+        )
+
+        bolhaBulbassauro.start()
+        bolhaSquirtle.start()
+        bolhaCharmander.start()
+
+    </script>
+
+</body>
+
+</html>

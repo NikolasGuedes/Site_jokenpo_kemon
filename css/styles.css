@@ -1,0 +1,81 @@
+@import url(./transicao.css);
+@import url(./base_tela.css);
+@import url(./menu_principal.css);
+@import url(./selecao_personagens.css);
+@import url(./modo_batalha.css);
+@import url(./menu_score.css);
+
+
+:root {
+  
+    --branco: #F8F9FA;
+    --cinza: #B3B3B3;
+    --preto: #000000;
+    --bege: #FFCC96;
+    --vermelho:#ff0505;
+    --magenta: #FF0055;
+    --verde-claro:#33CC66;
+    --menu-score:#36404C;
+    --fundo-menu-score:#313A43;
+
+    --cor-pedra:#9CF0FF;
+    --cor-papel:#FFFF66;
+    --cor-tesoura:#FF9933;
+
+    --verde-card-bulbassauro: #33CC33;
+    --verde-borda-card-bulbassauro: #009933;
+    --verde-fonte-card-bulbassauro: #99FF00;
+
+    --azul-card-squirtle: #7DDFFF;
+    --azul-borda-card-squirtle: #008BAF;
+    --azul-fonte-card-squirtle: #00FFEA;
+
+    --laranja-card-charmander: #FF8700;
+    --vermelho-borda-card-charmander: #FF4400;
+    --amarelo-fonte-card-charmander: #FFCC00;
+
+    --fonte-Principal: 'Roboto';
+}
+
+
+body {
+    background: var(--preto);
+    font-family: var(--fonte-Principal);
+    color: var(--preto);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+p {
+    margin:  0;
+}
+
+ul {
+    padding: 0;
+}
+
+div {
+    margin: 0;
+}
+
+img{
+
+    margin: 0;
+}
+
+html {
+
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--scroll-padding, 40px);
+}
+
+.ativa{
+    display: flex;
+
+}
+
+.desativa{
+    display: none !important;
+}
+
+
