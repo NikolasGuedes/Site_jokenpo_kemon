@@ -16,7 +16,7 @@
 
     display: flex;
     flex-direction: column;
-   padding: 1em;
+    padding: 1em;
 
     width: 100%;
     height: 100%;
@@ -30,43 +30,43 @@
 
 }
 
-.fundo_bulbassauro{
+.fundo_bulbassauro {
 
     background-image: url('../imgs/waves_bulbassauro.svg');
 }
 
-.fundo_squirtle{
+.fundo_squirtle {
 
     background-image: url('../imgs/waves_squirtle.svg');
 }
 
-.fundo_charmander{
+.fundo_charmander {
 
     background-image: url('../imgs/waves_charmander.svg');
 }
 
-.efeito_bolha_bulbassauro{
+.efeito_bolha_bulbassauro {
 
     display: none;
     position: absolute;
-    
+
 }
 
-.efeito_bolha_squirtle{
+.efeito_bolha_squirtle {
 
     display: none;
     position: absolute;
-    
+
 }
 
-.efeito_bolha_charmander{
+.efeito_bolha_charmander {
 
     display: none;
     position: absolute;
-    
+
 }
 
-.display-informacoes{
+.display-informacoes {
 
     z-index: 1;
 
@@ -87,7 +87,7 @@
 
 }
 
-.container_infos_pokemon{
+.container_infos_pokemon {
 
     display: flex;
     flex-direction: column;
@@ -101,7 +101,7 @@
     margin-bottom: auto;
 }
 
-.infos_pokemon{
+.infos_pokemon {
 
     display: flex;
     align-items: center;
@@ -110,10 +110,11 @@
     width: 90%;
 
     padding: 0.3em;
-    margin: 0.3em;  
+    margin: 0.3em;
 }
 
-.texto__titulo--nome_pokemon, .texto__titulo--vitorias_pokemon{
+.texto__titulo--nome_pokemon,
+.texto__titulo--vitorias_pokemon {
 
     font-weight: 300;
     font-size: 25px;
@@ -122,7 +123,7 @@
 
 }
 
-.texto__texto--nome_pokemon{
+.texto__texto--nome_pokemon {
 
     font-weight: 800;
     font-size: 25px;
@@ -132,7 +133,7 @@
 
 }
 
-.texto__contador--vitorias{
+.texto__contador--vitorias {
 
 
     font-weight: 800;
@@ -146,23 +147,23 @@
 
 }
 
-.contador_bulbassauro{
+.contador_bulbassauro {
 
     background: var(--verde-card-bulbassauro);
 }
 
-.contador_squirtle{
+.contador_squirtle {
 
     background: var(--azul-borda-card-squirtle);
 }
 
-.contador_charmander{
+.contador_charmander {
 
     background: var(--laranja-card-charmander);
 }
 
 
-.container_infos_jogada{
+.container_infos_jogada {
 
     display: flex;
     flex-direction: column;
@@ -177,78 +178,66 @@
 }
 
 
-.infos_jogada{
+.infos_jogada {
 
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-   
+
     width: 90%;
 
     padding: 0.3em;
-    margin: 0.3em;  
+    margin: 0.3em;
 }
 
-.infos_jogada_aguarde{
+.infos_jogada_aguarde {
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-   
+
     width: 90%;
 
     padding: 0.3em;
-    margin: 0.3em;  
+    margin: 0.3em;
 }
 
-.infos_jogada_resultado_cima{
+.infos_jogada_resultado_cima {
 
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    
+
     margin-top: 0.5em;
 
 }
 
-.infos_jogada_resultado_divisao{
+.infos_jogada_resultado_divisao {
 
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-   
+
     width: 100%;
     height: 90%;
 }
 
-.infos_jogada_resultado{
+.infos_jogada_resultado {
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-   
-    width: 50%;
 
-    animation: animacao-resultado 0.2s ease-in none;
+    width: 50%;
 
 }
 
-@keyframes animacao-resultado {
-    0% {
-        transform: translateY(4rem)
-    }
-    
-    100% {
-        transform: translateY(0rem)
-    }
-  }
-
-.texto__titulo--jogada{
+.texto__titulo--jogada {
 
     font-weight: 300;
     font-size: 35px;
@@ -256,7 +245,7 @@
 
 }
 
-.texto_jogada{
+.texto_jogada {
 
     font-weight: 300;
     font-size: 30px;
@@ -264,7 +253,7 @@
 
 }
 
-.texto_jogada-resultado{
+.texto_jogada-resultado {
 
     font-weight: 300;
     font-size: 30px;
@@ -275,25 +264,61 @@
 
 }
 
-.texto_fundo_amarelo{
+.texto_fundo_amarelo {
 
     background: var(--amarelo-fonte-card-charmander);
 
+    animation: resultado-empate 0.2s ease-in forwards;
+
 }
 
-.texto_fundo_verde{
+@keyframes resultado-empate {
+    0% {
+        transform: translateY(4rem)
+    }
+
+    100% {
+        transform: translateY(0rem)
+    }
+}
+
+.texto_fundo_verde {
 
     background: var(--verde-claro);
 
+    animation: resultado-vitoria 0.2s ease-in forwards;
+
 }
 
-.texto_fundo_vermelho{
+@keyframes resultado-vitoria {
+    0% {
+        transform: translateY(0rem)
+    }
+
+    100% {
+        transform: translateY(-2rem)
+    }
+}
+
+.texto_fundo_vermelho {
 
     background: var(--vermelho);
 
+    animation: resultado-derrota 0.2s ease-in forwards;
+
 }
 
-.tamanho__imagem--divisao_resultado{
+@keyframes resultado-derrota {
+    0% {
+        transform: translateY(0rem)
+    }
+
+    100% {
+        transform: translateY(2rem)
+    }
+}
+
+.tamanho__imagem--divisao_resultado {
 
     display: flex;
     align-self: center;
@@ -304,7 +329,7 @@
 
 }
 
-.tamanho_icone_opcao_batalha{
+.tamanho_icone_opcao_batalha_player {
 
     display: flex;
     align-items: center;
@@ -312,6 +337,42 @@
 
     margin: 0.5em;
     width: 40px;
+
+    animation: opcao-jogada-player 0.5s ease-in forwards;
+}
+
+@keyframes opcao-jogada-player {
+
+    0% {
+        transform: translateX(-5rem)
+    }
+
+    100% {
+        transform: translateY(0rem)
+    }
+}
+
+.tamanho_icone_opcao_batalha_cpu {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0.5em;
+    width: 40px;
+
+    animation: opcao-jogada-cpu 0.5s ease-in forwards;
+}
+
+@keyframes opcao-jogada-cpu {
+
+    0% {
+        transform: translateX(5rem)
+    }
+
+    100% {
+        transform: translateY(0rem)
+    }
 }
 
 
@@ -342,9 +403,9 @@
     100% {
         transform: rotate(360deg)
     }
-  }
+}
 
-.display-personagens{
+.display-personagens {
 
     z-index: 1;
 
@@ -365,11 +426,11 @@
 
 .icone_pokemon {
 
-   
+
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    
+
     width: 20%;
 
     animation: logo-jogo 4s ease-in infinite;
@@ -383,7 +444,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    
+
     width: 20%;
 
     animation: logo-jogo 4s ease-in infinite;
@@ -396,7 +457,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    
+
     width: 20%;
 
     animation: logo-jogo 4s ease-in infinite;
@@ -409,7 +470,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    
+
     width: 20%;
 
     animation: logo-jogo 4s ease-in infinite;
@@ -421,7 +482,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    
+
     width: 20%;
 
     animation: logo-jogo 4s ease-in-out infinite;
@@ -429,7 +490,7 @@
 }
 
 
-.display-opcoes{
+.display-opcoes {
 
     z-index: 1;
 
@@ -448,7 +509,7 @@
 
 }
 
-.botao_jogada{
+.botao_jogada {
 
     display: flex;
     flex-direction: row;
@@ -456,7 +517,7 @@
     justify-content: center;
     align-items: center;
     background: var(--branco);
-    
+
     border-radius: 1em;
     padding: 0.2em 2.5em;
 
@@ -471,14 +532,14 @@
 
 }
 
-.botao_jogada:hover{
+.botao_jogada:hover {
 
     display: flex;
     flex-direction: row;
     align-content: center;
     justify-content: center;
     align-items: center;
-    
+
     border-radius: 1em;
     padding: 0.2em 2.5em;
 
@@ -493,19 +554,19 @@
 
 }
 
-#opcao_pedra:hover{
+#opcao_pedra:hover {
 
     background: var(--cor-pedra);
 
 }
 
-#opcao_papel:hover{
+#opcao_papel:hover {
 
     background: var(--cor-papel);
 
 }
 
-#opcao_tesoura:hover{
+#opcao_tesoura:hover {
 
     background: var(--cor-tesoura);
 
@@ -520,7 +581,3 @@
     background-size: cover;
 
 }
-
-
-
-

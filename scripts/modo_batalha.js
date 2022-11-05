@@ -41,7 +41,7 @@ function botaoPedraAcionado() {
     
     `
 
-    setTimeout(chamaResultadoBatalha, 3000);
+    setTimeout(chamaResultadoBatalha, 1500);
 
 }
 
@@ -67,7 +67,7 @@ function botaoPapelAcionado() {
     
     `
 
-    setTimeout(chamaResultadoBatalha, 3000);
+    setTimeout(chamaResultadoBatalha, 1500);
 
 }
 
@@ -93,7 +93,7 @@ function botaoTesouraAcionado() {
     
     `
 
-    setTimeout(chamaResultadoBatalha, 3000);
+    setTimeout(chamaResultadoBatalha, 1500);
 
 }
 
@@ -143,7 +143,7 @@ function chamaResultadoBatalha() {
 
             <p class="texto_jogada">${opcao_jogador}</p>
 
-            <img src="./imgs/Icone_${opcao_jogador}.png" alt="" class="tamanho_icone_opcao_batalha">
+            <img src="./imgs/Icone_${opcao_jogador}.png" alt="" class="tamanho_icone_opcao_batalha_player">
 
         </div>
 
@@ -153,7 +153,7 @@ function chamaResultadoBatalha() {
 
             <p class="texto_jogada">${opcao_cpu}</p>
 
-            <img src="./imgs/Icone_${opcao_cpu}.png" alt="" class="tamanho_icone_opcao_batalha">
+            <img src="./imgs/Icone_${opcao_cpu}.png" alt="" class="tamanho_icone_opcao_batalha_cpu">
 
         </div>
 
@@ -205,6 +205,8 @@ function MonstraResultadoBatalha() {
 
         setTimeout(chamaTransicaoScore, 2500)
         setTimeout(geraScore, 2500)
+
+        setTimeout(chamaModal,7000)
 
     }else{
 

@@ -4,6 +4,7 @@
 @import url(./selecao_personagens.css);
 @import url(./modo_batalha.css);
 @import url(./menu_score.css);
+@import url(./dialog.css);
 
 
 :root {
@@ -17,6 +18,7 @@
     --verde-claro:#33CC66;
     --menu-score:#36404C;
     --fundo-menu-score:#313A43;
+    --roxo: #3300CC;
 
     --cor-pedra:#9CF0FF;
     --cor-papel:#FFFF66;

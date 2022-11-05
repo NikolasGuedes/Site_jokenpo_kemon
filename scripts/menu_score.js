@@ -5,6 +5,25 @@ const nota_batalha = document.getElementById('nota_batalha')
 
 const botao_jogar_novamente = document.getElementById('botao_jogar_novamente')
 
+const modal_perfil = document.getElementById('janela_perfil')
+const btn_fechar_modal = document.getElementById('btn_fechar_modal')
+
+
+btn_fechar_modal.addEventListener('click', () => {
+
+    modal_perfil.close()
+    modal_perfil.classList.remove('ativa')
+})
+
+
+function chamaModal() {
+
+    modal_perfil.classList.add('ativa')
+    modal_perfil.showModal();    
+
+}
+
+
 
 function geraScore() {
 

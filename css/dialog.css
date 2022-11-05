@@ -1,0 +1,191 @@
+.modal_perfil {
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    border: 0;
+
+    border-radius: 2em;
+    width: 25em;
+    height: 35em;
+
+    padding: 0;
+
+     background: var(--branco);
+
+     animation: janela-perfil 0.1s ease-in forwards;
+}
+
+@keyframes janela-perfil {
+    0% {
+        transform: translateY(-5rem);
+    }
+
+    100% {
+        transform: translateY(0rem);
+    }
+}
+
+.modal_perfil::backdrop {
+
+    background: black;
+    opacity: .9;
+}
+
+
+
+
+.modal-regiao-cima {
+
+    background: var(--roxo);
+
+    width: 100%;
+    height: 20%;
+
+}
+
+.container_imagem_fechar {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    margin-top: 1em;
+    width: 95%;
+
+}
+
+.tamanho_icone_fechar {
+
+    width: 50px;
+
+    cursor: pointer;
+    
+}
+
+
+
+.modal-regiao-foto {
+
+    width: 100%;
+    
+
+}
+
+.container_imagem_perfil {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 3em;
+    width: 100%;
+
+}
+
+.tamanho_imagem_perfil {
+
+    width: 200px;
+
+}
+
+.modal-regiao-infos{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+
+.modal-regiao-nome {
+
+    font-size: 25px;
+    font-weight: 800;
+
+    color: var(--roxo);
+}
+
+.modal-regiao-profissao {
+
+    font-size: 18px;
+    font-weight: 500;
+
+    color: var(--branco);
+    background: var(--roxo);
+
+    padding: 0.1em 1em;
+
+    border-radius: 2em;
+}
+
+.modal-regiao-texto {
+
+    width: 80%;
+
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+
+    margin-top: 0.5em;
+
+}
+
+.modal-regiao-fundo {
+
+    display: flex;
+
+    margin: 0;
+
+    background: var(--cinza);
+
+    width: 100%;
+    height: 12%;
+
+}
+
+.modal-regiao-icones{
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 29em;
+    width: 100%;
+
+    
+}
+
+
+.tamanho_icones_redes{
+
+    width: 65px;
+
+    cursor: pointer;
+
+    transition: 0.2s all;
+}
+
+.tamanho_icones_redes:hover{
+
+    transform: translateY(-1rem);
+}
+
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
+    border: none;
+    background: none;
+  }
