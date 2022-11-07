@@ -154,6 +154,9 @@
     border-radius: 2em;
     height: 60%;
     width: 25%;
+
+    margin-top: 2em;
+    margin-bottom: 2em;
    
 }
 
@@ -175,7 +178,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
     margin: auto;
@@ -233,7 +236,7 @@
     color: var(--branco);
     background: var(--bege);
     padding: 0 10%;
-    margin: 0 0.2em;
+    margin: 0.2em 0.2em;
 
 }
 
@@ -515,6 +518,16 @@
     width: 30px;
 }
 
+.tamanho__imagem--icone-opcao {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 1em;
+    width: 9%;
+}
+
 .tamanho__imagem--icone-pokebola-celular {
 
     display: flex;
@@ -575,7 +588,7 @@
     justify-content: space-between;
     /* background: var(--bege); */
     width: 100%;
-    height: 10%;
+    height: 13%;
 
 }
 
@@ -664,6 +677,14 @@
 
 }
 
+.display-opcoes-celular {
+
+    z-index: 1;
+   
+    width: 100%;
+   
+}
+
 .botao_jogada {
 
     display: flex;
@@ -696,7 +717,52 @@
     align-items: center;
 
     border-radius: 1em;
-    padding: 0.2em 2.5em;
+    padding: 0.2em 3em;
+
+    font-size: 25px;
+    font-weight: 200;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transform: translateY(-0.5rem);
+
+}
+
+.botao_jogada_celular {
+
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background: var(--branco);
+
+    border-radius: 1em;
+    padding: 0.5em 0;
+
+    font-size: 25px;
+    font-weight: 200;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition: 0.2s all;
+
+}
+
+.botao_jogada_celular:hover {
+
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 1em;
+    padding: 0.5em 0;
 
     font-size: 25px;
     font-weight: 200;

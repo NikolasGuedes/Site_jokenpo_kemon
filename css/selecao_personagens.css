@@ -146,21 +146,6 @@
     */
 }
 
-.swiper-slide{
-
-    width: 100% !important;
-
-    display: flex !important;
-    justify-content: center !important;
-
-    padding: 1em !important;
-}
-
-.swiper-pagination {
-
-    margin-bottom: 1em;
-}
-
 .imagem-pokemon {
 
     display: flex;
