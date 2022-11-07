@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,900;1,100&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,900;1,100&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
-
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/kute.js@2.2.4/dist/kute.min.js"></script>
 
     <title>Jokenpo kemon</title>
@@ -50,7 +53,7 @@
 
                 <div class="selecao-pokemon">
 
-                    <div class="card-pokemon-bulbassauro" id="card-bulbassauro">
+                    <div class="card-pokemon-bulbassauro" data-card-bulbassauro>
 
                         <div class="imagem-pokemon">
 
@@ -86,7 +89,7 @@
 
                     </div>
 
-                    <div class="card-pokemon-squirtle" id="card-squirtle">
+                    <div class="card-pokemon-squirtle" data-card-squirtle>
 
                         <div class="imagem-pokemon">
 
@@ -121,7 +124,7 @@
 
                     </div>
 
-                    <div class="card-pokemon-charmander" id="card-charmander">
+                    <div class="card-pokemon-charmander" data-card-charmander>
 
                         <div class="imagem-pokemon">
 
@@ -152,6 +155,151 @@
                             <p class="texto__texto--charmander">-Body Slam</p>
                             <p class="texto__texto--charmander">-Razor Leaf</p>
 
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="selecao-pokemon-celular">
+
+                    <!-- Slider main container -->
+                    <div class="carrossel__container">
+                        <div class="swiper">
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+
+                                <div class="swiper-slide">
+
+                                    <div class="card-pokemon-bulbassauro-celular" data-card-bulbassauro>
+
+                                        <div class="imagem-pokemon">
+
+                                            <img src="./imgs/Bulbassauro_Card.png" alt="Imagem Bulbassauro"
+                                                class="tamanho__imagem--card">
+
+                                        </div>
+
+                                        <div class="Informacoes-bulbassauro">
+
+                                            <p class="texto__titulo--bulbassauro">nome:</p>
+                                            <p class="texto__texto--bulbassauro">Bulbassauro</p>
+
+                                        </div>
+
+                                        <div class="Informacoes-bulbassauro">
+
+
+                                            <p class="texto__titulo--bulbassauro">Tipo:</p>
+                                            <p class="texto__texto--bulbassauro">Planta</p>
+                                            <img src="./imgs/Icone_Planta.png" alt="Icone tipo Planta"
+                                                class="tamanho__imagem--icone">
+
+                                        </div>
+
+                                        <div class="Informacoes-bulbassauro--habilidades">
+
+                                            <p class="texto__titulo--bulbassauro">Habilidades:</p>
+                                            <p class="texto__texto--bulbassauro">-Leaf Storm</p>
+                                            <p class="texto__texto--bulbassauro">-Body Slam</p>
+                                            <p class="texto__texto--bulbassauro">-Razor Leaf</p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="swiper-slide">
+
+                                    <div class="card-pokemon-squirtle-celular" data-card-squirtle>
+
+                                        <div class="imagem-pokemon">
+
+                                            <img src="./imgs/Squirtle_Card.png" alt="Imagem Squirtle"
+                                                class="tamanho__imagem--card">
+
+                                        </div>
+
+                                        <div class="Informacoes-squirtle">
+
+                                            <p class="texto__titulo--squirtle">nome:</p>
+                                            <p class="texto__texto--squirtle">squirtle</p>
+
+                                        </div>
+
+                                        <div class="Informacoes-squirtle">
+
+
+                                            <p class="texto__titulo--squirtle">Tipo:</p>
+                                            <p class="texto__texto--squirtle">Água</p>
+                                            <img src="./imgs/Icone_Agua.png" alt="Icone tipo Agua"
+                                                class="tamanho__imagem--icone">
+
+                                        </div>
+
+                                        <div class="Informacoes-squirtle--habilidades">
+
+                                            <p class="texto__titulo--squirtle">Habilidades:</p>
+                                            <p class="texto__texto--squirtle">-Rain Splash</p>
+                                            <p class="texto__texto--squirtle">-Shell Attack</p>
+                                            <p class="texto__texto--squirtle">-Bubble</p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="swiper-slide">
+
+                                    <div class="card-pokemon-charmander-celular" data-card-charmander>
+
+                                        <div class="imagem-pokemon">
+
+                                            <img src="./imgs/Charmander_Card.png" alt="Imagem charmander"
+                                                class="tamanho__imagem--card">
+
+                                        </div>
+
+                                        <div class="Informacoes-charmander">
+
+                                            <p class="texto__titulo--charmander">nome:</p>
+                                            <p class="texto__texto--charmander">charmander</p>
+
+                                        </div>
+
+                                        <div class="Informacoes-charmander">
+
+
+                                            <p class="texto__titulo--charmander">Tipo:</p>
+                                            <p class="texto__texto--charmander">Fogo</p>
+                                            <img src="./imgs/Icone_Fogo.png" alt="Icone tipo Fogo"
+                                                class="tamanho__imagem--icone">
+
+                                        </div>
+
+                                        <div class="Informacoes-charmander--habilidades">
+
+                                            <p class="texto__titulo--charmander">Habilidades:</p>
+                                            <p class="texto__texto--charmander">-Leaf Storm</p>
+                                            <p class="texto__texto--charmander">-Body Slam</p>
+                                            <p class="texto__texto--charmander">-Razor Leaf</p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
                         </div>
 
                     </div>
@@ -248,18 +396,19 @@
                     </div>
 
 
-                     <div class="container_infos_jogada" id="sessao_info_jogada">
+                    <div class="container_infos_jogada" id="sessao_info_jogada">
 
                         <div class="infos_jogada">
 
                             <p class="texto__titulo--jogada">Escolha sua ação</p>
-                            <img src="./imgs/Icone_Pokebola.png" alt="Icone Pokebola" class="tamanho__imagem--icone-pokebola">
+                            <img src="./imgs/Icone_Pokebola.png" alt="Icone Pokebola"
+                                class="tamanho__imagem--icone-pokebola">
 
                         </div>
 
                     </div>
 
-                    
+
                     <div class="container_infos_pokemon">
 
                         <div class="infos_pokemon">
@@ -305,6 +454,129 @@
 
             </section>
 
+            <section class="fundo_batalha_celular spacer" id="fundo-batalha-celular">
+
+                <div class="efeito_bolha_bulbassauro" id="bolha-bulbassauro">
+
+                    <svg id="visual" viewBox="0 0 960 540" width="960" height="540" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                        <g transform="translate(499.7823462314707 257.72715257647246)">
+                            <path id="blob01"
+                                d="M125.3 -141.4C147.8 -102.8 141.4 -51.4 134.4 -7C127.5 37.5 120 75 97.5 120C75 165 37.5 217.5 -13 230.4C-63.4 243.4 -126.8 216.8 -156.3 171.8C-185.8 126.8 -181.4 63.4 -178.2 3.2C-175 -57 -173.1 -114.1 -143.6 -152.7C-114.1 -191.4 -57 -211.7 -2.8 -208.9C51.4 -206 102.8 -180.1 125.3 -141.4"
+                                fill="#009933"></path>
+                        </g>
+
+                        <g transform="translate(445.06670620954134 277.3009240424324)" style="visibility: hidden ;">
+                            <path id="blob02"
+                                d="M125.7 -127.5C168.8 -82.5 213.9 -41.2 214.6 0.7C215.3 42.7 171.7 85.3 128.5 125C85.3 164.7 42.7 201.3 -0.8 202.2C-44.3 203 -88.6 168 -114.8 128.3C-141 88.6 -149 44.3 -142.7 6.2C-136.5 -31.8 -116 -63.6 -89.8 -108.6C-63.6 -153.6 -31.8 -211.8 4.7 -216.5C41.2 -221.2 82.5 -172.5 125.7 -127.5"
+                                fill="#009933"></path>
+                        </g>
+
+
+                    </svg>
+
+                </div>
+
+                <div class="efeito_bolha_squirtle" id="bolha-squirtle">
+
+                    <svg id="visual" viewBox="0 0 960 540" width="960" height="540" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                        <g transform="translate(499.7823462314707 257.72715257647246)">
+                            <path id="blob01_azul"
+                                d="M125.3 -141.4C147.8 -102.8 141.4 -51.4 134.4 -7C127.5 37.5 120 75 97.5 120C75 165 37.5 217.5 -13 230.4C-63.4 243.4 -126.8 216.8 -156.3 171.8C-185.8 126.8 -181.4 63.4 -178.2 3.2C-175 -57 -173.1 -114.1 -143.6 -152.7C-114.1 -191.4 -57 -211.7 -2.8 -208.9C51.4 -206 102.8 -180.1 125.3 -141.4"
+                                fill="#008BAF"></path>
+                        </g>
+
+                        <g transform="translate(445.06670620954134 277.3009240424324)" style="visibility: hidden ;">
+                            <path id="blob02_azul"
+                                d="M125.7 -127.5C168.8 -82.5 213.9 -41.2 214.6 0.7C215.3 42.7 171.7 85.3 128.5 125C85.3 164.7 42.7 201.3 -0.8 202.2C-44.3 203 -88.6 168 -114.8 128.3C-141 88.6 -149 44.3 -142.7 6.2C-136.5 -31.8 -116 -63.6 -89.8 -108.6C-63.6 -153.6 -31.8 -211.8 4.7 -216.5C41.2 -221.2 82.5 -172.5 125.7 -127.5"
+                                fill="#008BAF"></path>
+                        </g>
+
+                    </svg>
+
+                </div>
+
+                <div class="efeito_bolha_charmander" id="bolha-charmander">
+
+                    <svg id="visual" viewBox="0 0 960 540" width="960" height="540" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                        <g transform="translate(499.7823462314707 257.72715257647246)">
+                            <path id="blob01_laranja"
+                                d="M125.3 -141.4C147.8 -102.8 141.4 -51.4 134.4 -7C127.5 37.5 120 75 97.5 120C75 165 37.5 217.5 -13 230.4C-63.4 243.4 -126.8 216.8 -156.3 171.8C-185.8 126.8 -181.4 63.4 -178.2 3.2C-175 -57 -173.1 -114.1 -143.6 -152.7C-114.1 -191.4 -57 -211.7 -2.8 -208.9C51.4 -206 102.8 -180.1 125.3 -141.4"
+                                fill="#FF4400"></path>
+                        </g>
+
+                        <g transform="translate(445.06670620954134 277.3009240424324)" style="visibility: hidden ;">
+                            <path id="blob02_laranja"
+                                d="M125.7 -127.5C168.8 -82.5 213.9 -41.2 214.6 0.7C215.3 42.7 171.7 85.3 128.5 125C85.3 164.7 42.7 201.3 -0.8 202.2C-44.3 203 -88.6 168 -114.8 128.3C-141 88.6 -149 44.3 -142.7 6.2C-136.5 -31.8 -116 -63.6 -89.8 -108.6C-63.6 -153.6 -31.8 -211.8 4.7 -216.5C41.2 -221.2 82.5 -172.5 125.7 -127.5"
+                                fill="#FF4400"></path>
+                        </g>
+
+                    </svg>
+
+                </div>
+
+                <div class="frase-cima">
+                    <p>Batalha</p>
+                </div>
+
+                <section class="display-informacoes-celular">
+
+                    <div class="container_infos_pokemon_celular">
+
+                        <div class="infos_pokemon_celular">
+                            <p class="texto__titulo--vitorias_pokemon-celular">Vitórias: </p>
+                            <p class="texto__contador--vitorias-celular" id="contador_vitorias_player">0 / 3</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="container_infos_jogada_celular" id="sessao_info_jogada">
+
+                        <div class="infos_jogada_celular">
+
+                            <p class="texto__titulo--jogada-celular">Escolha sua ação</p>
+                            <img src="./imgs/Icone_Pokebola.png" alt="Icone Pokebola" class="tamanho__imagem--icone-pokebola-celular">
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="container_infos_pokemon_celular">
+
+
+                        <div class="infos_pokemon_celular">
+                            <p class="texto__titulo--vitorias_pokemon-celular">Vitórias: </p>
+                            <p class="texto__contador--vitorias-celular" id="contador_vitorias_cpu">0 / 3</p>
+                        </div>
+
+                    </div>
+
+                </section>
+
+                  <section class="display-personagens-celular">
+
+                    <div class="icone_pokemon" id="imagem-pokemon"></div>
+
+                    <div class="icone_pokemon_picachu"></div>
+
+                </section>
+
+                <section class="display-opcoes">
+
+                    <div class="botao_jogada" id="opcao_pedra">
+                        <p>pedra</p>
+                        <img src="./imgs/Icone_Pedra.png" alt="Icone Pedra" class="tamanho__imagem--icone-pokebola">
+                    </div>
+
+
+                </section>
+
+            </section>
+
         </section>
 
         <section class="menu_score spacer" id="menu_score">
@@ -343,23 +615,24 @@
         </section>
 
         <dialog class="modal_perfil" id="janela_perfil">
-            
+
             <div class="modal-regiao-cima">
-                
+
                 <div class="container_imagem_fechar">
 
-                    <img src="./imgs/icone_fechar.png" alt="icone fechar" class="tamanho_icone_fechar" id="btn_fechar_modal">
+                    <img src="./imgs/icone_fechar.png" alt="icone fechar" class="tamanho_icone_fechar"
+                        id="btn_fechar_modal">
 
                 </div>
 
             </div>
 
             <div class="modal-regiao-foto">
-                
+
                 <div class="container_imagem_perfil">
 
                     <img src="./imgs/imagem_perfil.png" alt="imagem perfil" class="tamanho_imagem_perfil">
-                    
+
                 </div>
 
             </div>
@@ -367,56 +640,57 @@
             <div class="modal-regiao-infos">
 
                 <div class="modal-regiao-nome">
-                
-                    <p>nikolas Guedes</p>
-                    
+
+                    <p>Nikolas Guedes</p>
+
                 </div>
-    
+
                 <div class="modal-regiao-profissao">
-                    
+
                     <p>front end dev</p>
-                    
+
                 </div>
-    
+
                 <div class="modal-regiao-texto">
-                    
+
                     <p>gostou deste projeto?</p>
-                    
+
                 </div>
-    
+
                 <div class="modal-regiao-texto">
-                    
+
                     <p> me siga nas redes sociais para ver meus outros trabalhos!</p>
-                    
+
                 </div>
 
             </div>
 
-        
+
             <div class="modal-regiao-fundo">
 
                 <div class="modal-regiao-icones">
 
-                    <a href="https://www.linkedin.com/in/nikolas-guedes-da-silva-6497541a1/" target="_blank" class="link">
+                    <a href="https://www.linkedin.com/in/nikolas-guedes-da-silva-6497541a1/" target="_blank"
+                        class="link">
 
                         <img src="./imgs/icone_linkdin.png" alt="icone linkdin" class="tamanho_icones_redes">
 
                     </a>
-                   
+
                     <a href="https://www.instagram.com/guedes_nk/" target="_blank" class="link">
 
                         <img src="./imgs/icone_instagram.png" alt="icone instagram" class="tamanho_icones_redes">
 
                     </a>
-                 
+
                     <a href="https://github.com/NikolasGuedes" target="_blank" class="link">
 
                         <img src="./imgs/icone_github.png" alt="icone github" class="tamanho_icones_redes">
 
                     </a>
-                
+
                 </div>
-                
+
             </div>
 
         </dialog>
@@ -455,6 +729,21 @@
         bolhaBulbassauro.start()
         bolhaSquirtle.start()
         bolhaCharmander.start()
+
+    </script>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 80,
+            slidesPerView: 1,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
 
     </script>
 

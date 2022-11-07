@@ -30,6 +30,25 @@
 
 }
 
+.fundo_batalha_celular {
+
+       
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+
+    width: 100%;
+    height: 100%;
+
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-content: space-evenly;
+
+    overflow: hidden;
+}
+
+
 .fundo_bulbassauro {
 
     background-image: url('../imgs/waves_bulbassauro.svg');
@@ -90,6 +109,24 @@
 
 }
 
+.display-informacoes-celular {
+
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    align-self: center;
+    align-content: center;
+    justify-content: space-evenly;
+    /* background: var(--bege); */
+    width: 100%;
+    height: 55%;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
 .container_infos_pokemon {
 
     display: flex;
@@ -107,6 +144,19 @@
    
 }
 
+.container_infos_pokemon_celular {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: var(--branco);
+    border-radius: 2em;
+    height: 60%;
+    width: 25%;
+   
+}
+
 .infos_pokemon {
 
     display: flex;
@@ -120,11 +170,31 @@
     margin: 0.3em;
 }
 
+.infos_pokemon_celular {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+}
+
 .texto__titulo--nome_pokemon,
 .texto__titulo--vitorias_pokemon {
 
     font-weight: 200;
     font-size: 25px;
+    text-transform: uppercase;
+
+
+}
+
+.texto__titulo--vitorias_pokemon-celular {
+
+    font-weight: 200;
+    font-size: 18px;
     text-transform: uppercase;
 
 
@@ -151,6 +221,19 @@
     color: var(--branco);
     background: var(--bege);
     padding: 0 20%;
+
+}
+
+.texto__contador--vitorias-celular {
+
+    font-weight: 800;
+    font-size: 19px;
+    text-transform: uppercase;
+   
+    color: var(--branco);
+    background: var(--bege);
+    padding: 0 10%;
+    margin: 0 0.2em;
 
 }
 
@@ -187,6 +270,19 @@
     */
 }
 
+.container_infos_jogada_celular {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--branco);
+    border-radius: 2em;
+    height: 90%;
+    width: 40%;
+    padding: 1em;
+}
+
 
 .infos_jogada {
 
@@ -197,6 +293,17 @@
 
     width: 90%;
 
+    padding: 0.3em;
+    margin: 0.3em;
+}
+
+.infos_jogada_celular {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
     padding: 0.3em;
     margin: 0.3em;
 }
@@ -251,6 +358,16 @@
 
     font-weight: 200;
     font-size: 35px;
+    text-transform: uppercase;
+    
+    text-align: center;
+
+}
+
+.texto__titulo--jogada-celular {
+
+    font-weight: 200;
+    font-size: 25px;
     text-transform: uppercase;
     
     text-align: center;
@@ -398,6 +515,17 @@
     width: 30px;
 }
 
+.tamanho__imagem--icone-pokebola-celular {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 1em;
+
+    width: 30px;
+}
+
 .tamanho__imagem--icone-pokebola_aguarde {
 
     display: flex;
@@ -433,6 +561,21 @@
     width: 90%;
     height: 35%;
     margin-top: 2em;
+
+}
+
+.display-personagens-celular {
+
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    align-self: center;
+    align-content: center;
+    justify-content: space-between;
+    /* background: var(--bege); */
+    width: 100%;
+    height: 10%;
 
 }
 
@@ -601,7 +744,6 @@
 
 
 
-
 @media screen and (max-width: 900px) {
 
 
@@ -610,6 +752,8 @@
        
         display: none;
     }
+
+ 
   
 }
 
@@ -634,6 +778,12 @@
     .texto__texto--nome_pokemon{
 
         font-size: 20px;
+    }
+
+    .fundo_batalha_celular {
+
+       
+        display: none;
     }
     
   

@@ -1,9 +1,9 @@
 const corFundo = document.getElementById("selecao_personagens")
 const fundoAnimado = document.getElementById("fundo_animado")
 
-const cartaBulbassauro = document.getElementById("card-bulbassauro")
-const cartaSquirtle = document.getElementById("card-squirtle")
-const cartacharmander = document.getElementById("card-charmander")
+const cartaBulbassauro = document.querySelectorAll("[data-card-bulbassauro]");
+const cartaSquirtle = document.querySelectorAll("[data-card-squirtle]")
+const cartacharmander = document.querySelectorAll("[data-card-charmander]")
 
 const modo_batalha = document.getElementById('modo_batalha')
 
@@ -19,107 +19,113 @@ const fundo_batalha = document.getElementById('fundo-batalha')
 const fundo_contador_vitorias = document.querySelectorAll('.texto__contador--vitorias')
 
 
-cartaBulbassauro.addEventListener("mouseover", () => {
+cartaBulbassauro.forEach((elemento) => {
 
-    corFundo.style.background = "#33CC33";
-    fundoAnimado.classList.add("fundo_animado_bulbassauro")
+    elemento.addEventListener("click", chamaTransicaoBatalha)
 
-})
+    elemento.addEventListener("mouseover", () => {
 
-cartaBulbassauro.addEventListener("mouseout", () => {
+        corFundo.style.background = "#33CC33";
+        fundoAnimado.classList.add("fundo_animado_bulbassauro")
 
-    corFundo.style.background = "#FFCC96";
-    fundoAnimado.classList.remove("fundo_animado_bulbassauro")
+    })
 
+    elemento.addEventListener("mouseout", () => {
 
-})
+        corFundo.style.background = "#FFCC96";
+        fundoAnimado.classList.remove("fundo_animado_bulbassauro")
 
-cartaBulbassauro.addEventListener("click", chamaTransicaoBatalha)
+    })
 
-cartaBulbassauro.addEventListener("click", () =>{
+    elemento.addEventListener("click", () => {
 
-    console.log("Player escolheu Bulbassauro")
+        console.log("Player escolheu Bulbassauro")
 
-    imagem_pokemon.classList.add('personagem_bulbassauro')
-    nome_pokemon.textContent = "Bulbassauro"
-    efeito_bolha_bulbassauro.classList.add('ativa')
-    fundo_batalha.classList.add('fundo_bulbassauro')
+        imagem_pokemon.classList.add('personagem_bulbassauro')
+        nome_pokemon.textContent = "Bulbassauro"
+        efeito_bolha_bulbassauro.classList.add('ativa')
+        fundo_batalha.classList.add('fundo_bulbassauro')
 
-    fundo_contador_vitorias.forEach((elemento) => {
+        fundo_contador_vitorias.forEach((elemento) => {
 
-        elemento.classList.add("contador_bulbassauro")
+            elemento.classList.add("contador_bulbassauro")
+        })
+
     })
 
 })
 
+cartaSquirtle.forEach((elemento) => {
 
+    elemento.addEventListener("click", chamaTransicaoBatalha)
 
-cartaSquirtle.addEventListener("mouseover", () => {
+    elemento.addEventListener("mouseover", () => {
 
-    fundoAnimado.classList.add("fundo_animado_squirtle")
-    corFundo.style.background = "#7DDFFF";
+        fundoAnimado.classList.add("fundo_animado_squirtle")
+        corFundo.style.background = "#7DDFFF";
 
-})
-
-cartaSquirtle.addEventListener("mouseout", () => {
-
-    fundoAnimado.classList.remove("fundo_animado_squirtle")
-    corFundo.style.background = "#FFCC96";
-
-})
-
-cartaSquirtle.addEventListener("click", chamaTransicaoBatalha)
-
-cartaSquirtle.addEventListener("click", () =>{
-
-    console.log("Player escolheu Squirtle")
-
-    imagem_pokemon.classList.add('personagem_squirtle')
-    nome_pokemon.textContent = "squirtle"
-    efeito_bolha_squirlte.classList.add('ativa')
-    fundo_batalha.classList.add('fundo_squirtle')
-
-    fundo_contador_vitorias.forEach((elemento) => {
-
-        elemento.classList.add("contador_squirtle")
     })
-    
-})
 
+    elemento.addEventListener("mouseout", () => {
 
+        fundoAnimado.classList.remove("fundo_animado_squirtle")
+        corFundo.style.background = "#FFCC96";
 
-cartacharmander.addEventListener("mouseover", () => {
-
-    fundoAnimado.classList.add("fundo_animado_charmander") 
-    corFundo.style.background = "#FF8700";
-
-})
-
-cartacharmander.addEventListener("mouseout", () => {
-
-    fundoAnimado.classList.remove("fundo_animado_charmander") 
-    corFundo.style.background = "#FFCC96";
-
-})
-
-cartacharmander.addEventListener("click", chamaTransicaoBatalha)
-
-cartacharmander.addEventListener("click", () =>{
-
-    console.log("Player escolheu Charmander")
-
-    imagem_pokemon.classList.add('personagem_charmander')
-    nome_pokemon.textContent = "charmander"
-    efeito_bolha_charmander.classList.add('ativa')
-    fundo_batalha.classList.add('fundo_charmander')
-
-    fundo_contador_vitorias.forEach((elemento) => {
-
-        elemento.classList.add("contador_charmander")
     })
-    
+
+    elemento.addEventListener("click", () => {
+
+        console.log("Player escolheu Squirtle")
+
+        imagem_pokemon.classList.add('personagem_squirtle')
+        nome_pokemon.textContent = "squirtle"
+        efeito_bolha_squirlte.classList.add('ativa')
+        fundo_batalha.classList.add('fundo_squirtle')
+
+        fundo_contador_vitorias.forEach((elemento) => {
+
+            elemento.classList.add("contador_squirtle")
+        })
+
+    })
+
 })
 
+cartacharmander.forEach((elemento) => {
+
+    elemento.addEventListener("click", chamaTransicaoBatalha)
+
+    elemento.addEventListener("mouseover", () => {
+
+        fundoAnimado.classList.add("fundo_animado_charmander")
+        corFundo.style.background = "#FF8700";
+
+    })
+
+    elemento.addEventListener("mouseout", () => {
+
+        fundoAnimado.classList.remove("fundo_animado_charmander")
+        corFundo.style.background = "#FFCC96";
+
+    })
+
+    elemento.addEventListener("click", () => {
+
+        console.log("Player escolheu Charmander")
+
+        imagem_pokemon.classList.add('personagem_charmander')
+        nome_pokemon.textContent = "charmander"
+        efeito_bolha_charmander.classList.add('ativa')
+        fundo_batalha.classList.add('fundo_charmander')
+
+        fundo_contador_vitorias.forEach((elemento) => {
+
+            elemento.classList.add("contador_charmander")
+        })
+
+    })
+
+})
 
 
 function chamaTransicaoBatalha() {
