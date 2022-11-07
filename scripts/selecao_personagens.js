@@ -23,19 +23,7 @@ cartaBulbassauro.forEach((elemento) => {
 
     elemento.addEventListener("click", chamaTransicaoBatalha)
 
-    elemento.addEventListener("mouseover", () => {
-
-        corFundo.style.background = "#33CC33";
-        fundoAnimado.classList.add("fundo_animado_bulbassauro")
-
-    })
-
-    elemento.addEventListener("mouseout", () => {
-
-        corFundo.style.background = "#FFCC96";
-        fundoAnimado.classList.remove("fundo_animado_bulbassauro")
-
-    })
+   
 
     elemento.addEventListener("click", () => {
 
@@ -59,19 +47,7 @@ cartaSquirtle.forEach((elemento) => {
 
     elemento.addEventListener("click", chamaTransicaoBatalha)
 
-    elemento.addEventListener("mouseover", () => {
-
-        fundoAnimado.classList.add("fundo_animado_squirtle")
-        corFundo.style.background = "#7DDFFF";
-
-    })
-
-    elemento.addEventListener("mouseout", () => {
-
-        fundoAnimado.classList.remove("fundo_animado_squirtle")
-        corFundo.style.background = "#FFCC96";
-
-    })
+   
 
     elemento.addEventListener("click", () => {
 
@@ -95,19 +71,7 @@ cartacharmander.forEach((elemento) => {
 
     elemento.addEventListener("click", chamaTransicaoBatalha)
 
-    elemento.addEventListener("mouseover", () => {
-
-        fundoAnimado.classList.add("fundo_animado_charmander")
-        corFundo.style.background = "#FF8700";
-
-    })
-
-    elemento.addEventListener("mouseout", () => {
-
-        fundoAnimado.classList.remove("fundo_animado_charmander")
-        corFundo.style.background = "#FFCC96";
-
-    })
+  
 
     elemento.addEventListener("click", () => {
 
