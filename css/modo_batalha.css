@@ -335,10 +335,32 @@
 
 }
 
+.infos_jogada_resultado_cima_celular {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 1em;
+
+}
+
 .infos_jogada_resultado_divisao {
 
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 90%;
+}
+
+.infos_jogada_resultado_divisao_celular {
+
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
@@ -385,6 +407,14 @@
 
 }
 
+.texto_jogada_celular {
+
+    font-weight: 200;
+    font-size: 20px;
+    text-transform: uppercase;
+
+}
+
 .texto_jogada-resultado {
 
     font-weight: 200;
@@ -396,9 +426,20 @@
 
 }
 
+.texto_jogada-resultado_celular {
+
+    font-weight: 200;
+    font-size: 20px;
+    text-transform: uppercase;
+    background: var(--bege);
+    color: var(--branco);
+    padding: 0 0.5em;
+
+}
+
 .texto_fundo_amarelo {
 
-    background: var(--amarelo-fonte-card-charmander);
+    background: var(--amarelo);
 
     animation: resultado-empate 0.2s ease-in forwards;
 
@@ -484,6 +525,20 @@
     }
 }
 
+.tamanho_icone_opcao_batalha_player_celular {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0.5em;
+    width: 20px;
+
+    animation: opcao-jogada-player 0.5s ease-in forwards;
+
+}
+
+
 .tamanho_icone_opcao_batalha_cpu {
 
     display: flex;
@@ -505,6 +560,19 @@
     100% {
         transform: translateY(0rem)
     }
+}
+
+.tamanho_icone_opcao_batalha_cpu_celular {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0.5em;
+    width: 20px;
+
+    animation: opcao-jogada-cpu 0.5s ease-in forwards;
+
 }
 
 
