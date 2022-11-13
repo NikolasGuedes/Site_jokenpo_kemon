@@ -189,3 +189,14 @@ a, a:visited, a:hover, a:active {
     border: none;
     background: none;
   }
+
+
+  @media screen and (max-width: 1200px) {
+
+    .tamanho_imagem_perfil {
+
+        width: 180px;
+    
+    }
+
+  }

@@ -16,11 +16,35 @@ botao_pedra.forEach((elemento) => {
 
     elemento.addEventListener("click", botaoPedraAcionado)
 
+    elemento.addEventListener("mouseover", () => {
+
+        elemento.classList.add('cor_opcao_pedra')
+
+    })
+
+    elemento.addEventListener("mouseout", () => {
+
+        elemento.classList.remove('cor_opcao_pedra')
+
+    })
+
 })
 
 botao_papel.forEach((elemento) => {
 
     elemento.addEventListener("click", botaoPapelAcionado)
+
+    elemento.addEventListener("mouseover", () => {
+
+        elemento.classList.add('cor_opcao_papel')
+
+    })
+
+    elemento.addEventListener("mouseout", () => {
+
+        elemento.classList.remove('cor_opcao_papel')
+
+    })
 
 })
 
@@ -28,11 +52,22 @@ botao_tesoura.forEach((elemento) => {
 
     elemento.addEventListener("click", botaoTesouraAcionado)
 
+    elemento.addEventListener("mouseover", () => {
+
+        elemento.classList.add('cor_opcao_tesoura')
+
+    })
+
+    elemento.addEventListener("mouseout", () => {
+
+        elemento.classList.remove('cor_opcao_tesoura')
+
+    })
+
 })
 
-
-
 const menu_score = document.getElementById('menu_score')
+
 
 
 function botaoPedraAcionado() {
@@ -43,18 +78,7 @@ function botaoPedraAcionado() {
 
     escondeBotoes()
 
-
-    sessao_info_jogada.innerHTML =
-
-        `
-    <div class="infos_jogada_aguarde" id="sessao_info_jogada">
-
-        <img src="./imgs/Icone_Pokebola.png" alt="Icone Pokebola" class="tamanho__imagem--icone-pokebola_aguarde">
-        <p class="texto__titulo--jogada">Aguarde...</p>
-
-    </div>
-    
-    `
+    aguardandoResultado()
 
     setTimeout(chamaResultadoBatalha, 1500);
 
@@ -66,19 +90,9 @@ function botaoPapelAcionado() {
 
     opcao_jogador = "Papel"
 
-   escondeBotoes()
+    escondeBotoes()
 
-    sessao_info_jogada.innerHTML =
-
-        `
-    <div class="infos_jogada_aguarde" id="sessao_info_jogada">
-
-        <img src="./imgs/Icone_Pokebola.png" alt="Icone Pokebola" class="tamanho__imagem--icone-pokebola_aguarde">
-        <p class="texto__titulo--jogada">Aguarde...</p>
-
-    </div>
-    
-    `
+    aguardandoResultado()
 
     setTimeout(chamaResultadoBatalha, 1500);
 
@@ -92,17 +106,7 @@ function botaoTesouraAcionado() {
 
     escondeBotoes()
 
-    sessao_info_jogada.innerHTML =
-
-        `
-    <div class="infos_jogada_aguarde" id="sessao_info_jogada">
-
-        <img src="./imgs/Icone_Pokebola.png" alt="Icone Pokebola" class="tamanho__imagem--icone-pokebola_aguarde">
-        <p class="texto__titulo--jogada">Aguarde...</p>
-
-    </div>
-    
-    `
+    aguardandoResultado()
 
     setTimeout(chamaResultadoBatalha, 1500);
 
@@ -177,7 +181,6 @@ function chamaResultadoBatalha() {
     <div class="infos_jogada_resultado_cima_celular">
 
         <p class="texto__titulo--jogada-celular">resultado</p>
-        <img src="./imgs/Icone_Pokebola.png" alt="Icone Pokebola" class="tamanho__imagem--icone-pokebola-celular">
 
     </div>
 
@@ -294,7 +297,6 @@ function RetornaMenuBatalha() {
 
 }
 
-
 function EmpatouRodada() {
 
     sessao_info_jogada.innerHTML =
@@ -332,13 +334,12 @@ function EmpatouRodada() {
     <div class="infos_jogada_resultado_cima_celular">
 
         <p class="texto__titulo--jogada-celular">resultado</p>
-        <img src="./imgs/Icone_Pokebola.png" alt="Icone Pokebola" class="tamanho__imagem--icone-pokebola-celular">
 
     </div>
 
     <div class="infos_jogada_resultado_divisao_celular">
 
-        <div class="infos_jogada_resultado" id="jogada_player">
+        <div class="infos_jogada_resultado_celular" id="jogada_player">
 
             <p class="texto_jogada-resultado_celular texto_fundo_amarelo">empate</p>
 
@@ -388,15 +389,14 @@ function VenceuRodada() {
     <div class="infos_jogada_resultado_cima_celular">
 
         <p class="texto__titulo--jogada-celular">resultado</p>
-        <img src="./imgs/Icone_Pokebola.png" alt="Icone Pokebola" class="tamanho__imagem--icone-pokebola-celular">
 
     </div>
 
     <div class="infos_jogada_resultado_divisao_celular">
 
-        <div class="infos_jogada_resultado" id="jogada_player">
+        <div class="infos_jogada_resultado_celular" id="jogada_player">
 
-            <p class="texto_jogada-resultado_celular texto_fundo_verde">vencedor</p>
+            <p class="texto_jogada-resultado_celular texto_fundo_verde">venceu rodada</p>
 
         </div>
 
@@ -452,15 +452,14 @@ function PerdeuRodada() {
     <div class="infos_jogada_resultado_cima_celular">
 
         <p class="texto__titulo--jogada-celular">resultado</p>
-        <img src="./imgs/Icone_Pokebola.png" alt="Icone Pokebola" class="tamanho__imagem--icone-pokebola-celular">
 
     </div>
 
     <div class="infos_jogada_resultado_divisao_celular">
 
-        <div class="infos_jogada_resultado" id="jogada_player">
+        <div class="infos_jogada_resultado_celular" id="jogada_player">
 
-            <p class="texto_jogada-resultado_celular texto_fundo_vermelho">perdedor</p>
+            <p class="texto_jogada-resultado_celular texto_fundo_vermelho">perdeu rodada</p>
 
         </div>
 
@@ -476,7 +475,6 @@ function PerdeuRodada() {
     //contador_vitorias_cpu.innerHTML = ` ${total_vitorias_cpu} / 3 `
 
 }
-
 
 function chamaTransicaoScore() {
 
@@ -500,46 +498,76 @@ function chamaMenuScore() {
 
 }
 
-function escondeBotoes(){
+function escondeBotoes() {
 
     botao_pedra.forEach((elemento) => {
 
         elemento.classList.add('desativa')
-    
+
     })
 
     botao_papel.forEach((elemento) => {
 
         elemento.classList.add('desativa')
-    
+
     })
 
     botao_tesoura.forEach((elemento) => {
 
         elemento.classList.add('desativa')
-    
+
     })
-    
+
 }
 
-function retornaBotoes(){
+function retornaBotoes() {
 
     botao_pedra.forEach((elemento) => {
 
         elemento.classList.remove('desativa')
-    
+
     })
 
     botao_papel.forEach((elemento) => {
 
         elemento.classList.remove('desativa')
-    
+
     })
 
     botao_tesoura.forEach((elemento) => {
 
         elemento.classList.remove('desativa')
-    
+
     })
-    
+
+}
+
+function aguardandoResultado() {
+
+    sessao_info_jogada.innerHTML =
+
+        `
+
+        <div class="infos_jogada_aguarde" id="sessao_info_jogada">
+
+            <img src="./imgs/Icone_Pokebola.png" alt="Icone Pokebola" class="tamanho__imagem--icone-pokebola_aguarde">
+            <p class="texto__titulo--jogada">Aguarde...</p>
+
+        </div>
+        
+        `
+
+    sessao_info_jogada_celular.innerHTML =
+
+        `
+
+        <div class="infos_jogada_aguarde" id="sessao_info_jogada">
+
+            <p class="texto__titulo--jogada-celular">Aguarde...</p>
+            <img src="./imgs/Icone_Pokebola.png" alt="Icone Pokebola" class="tamanho__imagem--icone-pokebola_aguarde_celular">
+
+        </div>
+
+        `
+
 }

@@ -197,3 +197,67 @@
     font-size: 25px;
 
 }
+
+
+
+
+@media screen and (max-width: 1200px) {
+
+
+    .container_score {
+
+        width: 80%;
+
+    }
+
+    .resultado_batalha{
+
+        flex-direction: column;
+        height: 20%;
+        text-align: center;
+        width: 100%;
+
+        font-size: 25px;
+    }
+
+    .total_jogadas {
+
+        flex-direction: column;
+        height: 20%;
+        text-align: center;
+        width: 100%;
+
+        font-size: 25px;
+
+    }
+
+    .texto_batalha{
+
+        height: 10%;
+        text-align: center;
+        width: 100%;
+        flex-wrap: wrap;
+
+        font-size: 20px;
+
+    }
+
+    .botao_jogar_novamente{
+
+        padding: 1em 3em;
+
+    }
+
+    .texto__botao_jogar_novamente{
+
+        font-size: 20px;
+
+    }
+
+    .botao_jogar_novamente:hover{
+
+        padding: 1em 4em;
+
+    }
+  
+}

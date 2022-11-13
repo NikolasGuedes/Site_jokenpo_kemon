@@ -120,8 +120,8 @@
     justify-content: space-evenly;
     /* background: var(--bege); */
     width: 100%;
-    height: 55%;
-    margin-top: 2em;
+    height: 50%;
+    /* margin-top: 2em; */
     margin-left: auto;
     margin-right: auto;
 
@@ -152,11 +152,12 @@
     justify-content: space-evenly;
     background: var(--branco);
     border-radius: 2em;
-    height: 60%;
-    width: 25%;
+    height: 80%;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
 
     margin-top: 2em;
-    margin-bottom: 2em;
    
 }
 
@@ -197,7 +198,7 @@
 .texto__titulo--vitorias_pokemon-celular {
 
     font-weight: 200;
-    font-size: 18px;
+    font-size: 22px;
     text-transform: uppercase;
 
 
@@ -282,8 +283,10 @@
     background: var(--branco);
     border-radius: 2em;
     height: 90%;
-    width: 40%;
+    width: 90%;
     padding: 1em;
+
+    margin-top: 1em;
 }
 
 
@@ -338,11 +341,12 @@
 .infos_jogada_resultado_cima_celular {
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 
-    margin-top: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
 
 }
 
@@ -360,7 +364,7 @@
 .infos_jogada_resultado_divisao_celular {
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 
@@ -376,6 +380,17 @@
     justify-content: center;
 
     width: 50%;
+
+}
+
+.infos_jogada_resultado_celular {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 80%;
 
 }
 
@@ -410,7 +425,7 @@
 .texto_jogada_celular {
 
     font-weight: 200;
-    font-size: 20px;
+    font-size: 25px;
     text-transform: uppercase;
 
 }
@@ -429,11 +444,13 @@
 .texto_jogada-resultado_celular {
 
     font-weight: 200;
-    font-size: 20px;
+    font-size: 25px;
     text-transform: uppercase;
     background: var(--bege);
     color: var(--branco);
     padding: 0 0.5em;
+
+    margin-bottom: 0.5em;
 
 }
 
@@ -532,7 +549,7 @@
     justify-content: center;
 
     margin: 0.5em;
-    width: 20px;
+    width: 25px;
 
     animation: opcao-jogada-player 0.5s ease-in forwards;
 
@@ -569,7 +586,7 @@
     justify-content: center;
 
     margin: 0.5em;
-    width: 20px;
+    width: 25px;
 
     animation: opcao-jogada-cpu 0.5s ease-in forwards;
 
@@ -602,7 +619,7 @@
     align-items: center;
     justify-content: center;
 
-    margin-top: 1em;
+    margin-top: 0.5em;
 
     width: 30px;
 }
@@ -615,6 +632,18 @@
 
     margin-bottom: 0.5em;
     width: 70px;
+
+    animation: pokebola_aguarde 4s linear infinite;
+}
+
+.tamanho__imagem--icone-pokebola_aguarde_celular {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 1em;
+    width: 30px;
 
     animation: pokebola_aguarde 4s linear infinite;
 }
@@ -653,10 +682,10 @@
     justify-self: center;
     align-self: center;
     align-content: center;
-    justify-content: space-between;
+    justify-content: space-around;
     /* background: var(--bege); */
     width: 100%;
-    height: 13%;
+    height: 50%;
 
 }
 
@@ -843,19 +872,19 @@
 
 }
 
-#opcao_pedra:hover {
+.cor_opcao_pedra {
 
     background: var(--cor-pedra);
 
 }
 
-#opcao_papel:hover {
+.cor_opcao_papel {
 
     background: var(--cor-papel);
 
 }
 
-#opcao_tesoura:hover {
+.cor_opcao_tesoura {
 
     background: var(--cor-tesoura);
 
